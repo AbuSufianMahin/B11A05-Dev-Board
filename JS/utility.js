@@ -8,7 +8,5 @@ document.getElementById("theme-changer-btn")
         let randomIndex = count%6;
         document.body.style.backgroundColor = colorList[randomIndex];
         count += 1;
-        
-
-
     })
+

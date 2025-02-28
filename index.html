@@ -18,8 +18,8 @@
 
 </head>
 
-<body class="poppins-regular pt-6 pb-15">
-    <header class="border border-red-500 p-6 rounded-2xl max-w-380 m-auto bg-white flex justify-between">
+<body class="poppins-regular pt-6 pb-15 bg-[#F4F7FF]">
+    <header class="max-w-380 m-auto p-6 bg-white rounded-2xl flex justify-between">
         <div class="flex items-center gap-2">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-4xl">Dev<span class="font-bold">Board</span> </h1>
@@ -34,12 +34,48 @@
             </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main class="max-w-380 m-auto mt-5 grid grid-cols-4">
+        <!-- main body -->
+        <section class="col-span-3 bg-white rounded-2xl p-6 border border-red-500">
+            <section class="grid grid-cols-4 gap-5">
+                <div class="p-6 bg-[#F4F7FF] flex items-center rounded-2xl gap-5 col-span-1">
+                    <div class="bg-white p-5 rounded-full">
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <p class="text-3xl font-bold">5</p>
+                    </div>
+                </div>
+                
+                <div class="col-span-2 bg-linear-[315deg,#9BA8F8,#6C7FFA,#3752FD] rounded-2xl flex items-center py-5 px-10 gap-5">
+                    <img src="./assets/board.png" alt="">
+                    <p class="text-white font-medium text-2xl">Discover Something <br>New Today!</p>
+                </div>
+
+                <div class="p-6 bg-[#F4F7FF] flex items-center rounded-2xl gap-5 col-span-1">
+                    <div class="bg-white p-5 rounded-full">
+                        <img src="./assets/calender.png" alt="calender icon">
+                    </div>
+                    <p id="get-date-string"></p>
+                </div>
+            </section>
+
+
+
+        </section>
+
+        <!-- activity log -->
+        <section class="col-span-1">
+
+        </section>
+    </main>
+    
 
     <!-- JS files -->
     <script src="JS\utility.js"></script>
-
+    <script src="JS\currentDateGenerator.js"></script>
 </body>
 
 </html>
