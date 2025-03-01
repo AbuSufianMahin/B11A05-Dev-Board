@@ -10,3 +10,14 @@ document.getElementById("theme-changer-btn")
         count += 1;
     })
 
+document.getElementById("mobile-fix-btn")
+    .addEventListener("click", function(){
+
+        alert("Board updated Succesfully")
+        document.getElementById("mobile-fix-btn").disabled = true;
+        document.getElementById("remaining-task-count").innerText -= 1;
+        
+        let pointsCount = parseInt(document.getElementById("points-count").innerText);
+        document.getElementById("points-count").innerText = pointsCount + 1;
+        
+    })
