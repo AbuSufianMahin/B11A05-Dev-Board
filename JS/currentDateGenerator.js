@@ -8,5 +8,16 @@ const dayOfWeek = dayList[currentDateObj.getDay()]
 const date = currentDateObj.getDate();
 const year = currentDateObj.getFullYear();
 
-
 document.getElementById("get-date-string").innerHTML = `${dayOfWeek}, <br> <span class="font-bold text-xl"> ${monthName} ${date} ${year} <span>`
+
+let hour = currentDateObj.getHours();
+const min = currentDateObj.getMinutes();
+const sec = currentDateObj.getSeconds();
+
+let notation = "AM";
+if (hour > 12){
+    notation = "PM";
+    hour = hour - 12;
+}
+
+const currentTime = `${hour}:${min}:${sec} ${notation}`
