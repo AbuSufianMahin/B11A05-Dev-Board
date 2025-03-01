@@ -1,5 +1,6 @@
-let count = 0
 
+// background color changing button
+let count = 0;
 document.getElementById("theme-changer-btn")
     .addEventListener("click", function () {
         const colorList = ["#ACDDDE", "#CAF1DE", "#E1F8DC", "#FEF8DD", "#FFE7C7", "#F7D8BA"];
@@ -12,7 +13,7 @@ document.getElementById("theme-changer-btn")
 
 
 
-
+// all the complete buttons
 document.getElementById("mobile-fix-btn")
     .addEventListener("click", function () {
         alert("Board updated Succesfully");
@@ -50,9 +51,6 @@ document.getElementById("job-searching-btn")
         allTaskOfCompleteButton(idOfButton);
     })
 
-
-
-
 function allTaskOfCompleteButton(btnId) {
     btnId.disabled = true;
     document.getElementById("remaining-task-count").innerText -= 1;
@@ -73,9 +71,15 @@ function allTaskOfCompleteButton(btnId) {
     const historyContainer = document.getElementById("history-container");
     historyContainer.appendChild(promptParagraph);
 
-    
-    if (document.getElementById("remaining-task-count").innerText == 0){
+
+    if (document.getElementById("remaining-task-count").innerText == 0) {
         alert("Congrats!! You have completed all the current task");
     }
 }
+// clear history button
+document.getElementById("clear-history-btn").addEventListener("click", function () {
+    document.getElementById("history-container").innerHTML = "";
+})
+
+
 
