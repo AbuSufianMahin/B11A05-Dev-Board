@@ -38,8 +38,3 @@ function allTaskOfCompleteButton(btnId) {
     const historyContainer = document.getElementById("history-container");
     historyContainer.appendChild(promptParagraph)
 }
-
-// document.getElementById("card-contend")
-//     .addEventListener("click", function(){
-//         console.log("card contend clicked")
-//     })
