@@ -1,14 +1,15 @@
 
 // background color changing button
-let count = 0;
+// let count = 0;
 document.getElementById("theme-changer-btn")
     .addEventListener("click", function () {
-        const colorList = ["#ACDDDE", "#CAF1DE", "#E1F8DC", "#FEF8DD", "#FFE7C7", "#F7D8BA"];
-        // let randomIndex = Math.round(Math.random()*(5-0));
+        const colorList = ["#ACDDDE", "#CAF1DE", "#E1F8DC", "#FEF8DD", "#FFE7C7", "#F7D8BA","#B3C7FF", "#DCE4FF", "#F4F7FF"];
+        let randomIndex = Math.round(Math.random()*(8-0));
         // console.log(randomIndex)
-        let randomIndex = count % 6;
+
+        // let randomIndex = count % 9;
         document.body.style.backgroundColor = colorList[randomIndex];
-        count += 1;
+        // count += 1;
     })
 
 
