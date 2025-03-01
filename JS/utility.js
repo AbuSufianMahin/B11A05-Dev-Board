@@ -10,12 +10,47 @@ document.getElementById("theme-changer-btn")
         count += 1;
     })
 
+
+
+
 document.getElementById("mobile-fix-btn")
-    .addEventListener("click", function (event) {
+    .addEventListener("click", function () {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("mobile-fix-btn");
         allTaskOfCompleteButton(idOfButton);
     })
+document.getElementById("dark-mode-btn")
+    .addEventListener("click", function (event) {
+        alert("Board updated Succesfully");
+        const idOfButton = document.getElementById("dark-mode-btn");
+        allTaskOfCompleteButton(idOfButton);
+    })
+document.getElementById("optimize-btn")
+    .addEventListener("click", function (event) {
+        alert("Board updated Succesfully");
+        const idOfButton = document.getElementById("optimize-btn");
+        allTaskOfCompleteButton(idOfButton);
+    })
+document.getElementById("add-emoji-btn")
+    .addEventListener("click", function (event) {
+        alert("Board updated Succesfully");
+        const idOfButton = document.getElementById("add-emoji-btn");
+        allTaskOfCompleteButton(idOfButton);
+    })
+document.getElementById("integrate-AI-btn")
+    .addEventListener("click", function (event) {
+        alert("Board updated Succesfully");
+        const idOfButton = document.getElementById("integrate-AI-btn");
+        allTaskOfCompleteButton(idOfButton);
+    })
+document.getElementById("job-searching-btn")
+    .addEventListener("click", function (event) {
+        alert("Board updated Succesfully");
+        const idOfButton = document.getElementById("job-searching-btn");
+        allTaskOfCompleteButton(idOfButton);
+    })
+
+
 
 
 function allTaskOfCompleteButton(btnId) {
@@ -32,9 +67,15 @@ function allTaskOfCompleteButton(btnId) {
 
 
     let promptParagraph = document.createElement('p');
-    promptParagraph.classList.add("bg-[#F4F7FF]", "p-3", "rounded-lg")
+    promptParagraph.classList.add("bg-[#F4F7FF]", "p-3", "rounded-lg", "mb-5")
     promptParagraph.innerText = `You have Completed The Task ${taskTitle} at ${currentTime}`
 
     const historyContainer = document.getElementById("history-container");
-    historyContainer.appendChild(promptParagraph)
+    historyContainer.appendChild(promptParagraph);
+
+    
+    if (document.getElementById("remaining-task-count").innerText == 0){
+        alert("Congrats!! You have completed all the current task");
+    }
 }
+
