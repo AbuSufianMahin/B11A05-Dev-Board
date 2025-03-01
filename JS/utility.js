@@ -16,43 +16,43 @@ document.getElementById("theme-changer-btn")
 
 // all the complete buttons
 document.getElementById("mobile-fix-btn")
-    .addEventListener("click", function () {
+    .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("mobile-fix-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 document.getElementById("dark-mode-btn")
     .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("dark-mode-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 document.getElementById("optimize-btn")
     .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("optimize-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 document.getElementById("add-emoji-btn")
     .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("add-emoji-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 document.getElementById("integrate-AI-btn")
     .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("integrate-AI-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 document.getElementById("job-searching-btn")
     .addEventListener("click", function (event) {
         alert("Board updated Succesfully");
         const idOfButton = document.getElementById("job-searching-btn");
-        allTaskOfCompleteButton(idOfButton);
+        allTaskOfCompleteButton(idOfButton, event);
     })
 
-function allTaskOfCompleteButton(btnId) {
+function allTaskOfCompleteButton(btnId,clickedEvent) {
     btnId.disabled = true;
     document.getElementById("remaining-task-count").innerText -= 1;
 
@@ -61,7 +61,7 @@ function allTaskOfCompleteButton(btnId) {
 
 
 
-    const parent = event.target.parentNode.parentNode.parentNode
+    const parent = clickedEvent.target.parentNode.parentNode.parentNode
     const taskTitle = parent.querySelector(".card-title").innerText;
 
 
