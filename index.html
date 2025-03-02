@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
-
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- tailwind -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
@@ -19,15 +19,13 @@
 
         .poppins-regular {
             font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
         }
     </style>
 
 </head>
 
 <body class="poppins-regular pt-6 pb-15 bg-[#F4F7FF]">
-    <header class="max-w-380 m-auto p-6 bg-white rounded-2xl flex justify-between">
+    <header class="max-w-380 m-auto p-6 bg-white rounded-2xl flex justify-between drop-shadow-lg">
         <div class="flex items-center gap-2">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-4xl">Dev<span class="font-bold">Board</span> </h1>
@@ -45,7 +43,7 @@
 
     <main class="max-w-380 m-auto mt-5 grid grid-cols-4 gap-6">
         <!-- main body -->
-        <section class="col-span-3 bg-white rounded-2xl">
+        <section class="col-span-3 bg-white rounded-2xl drop-shadow-lg">
             <div class="grid grid-cols-4 gap-5 p-6">
                 <div class="p-6 bg-[#F4F7FF] flex items-center rounded-2xl gap-5 col-span-1">
                     <div class="bg-white p-5 rounded-full">
@@ -57,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 bg-linear-[315deg,#9BA8F8,#6C7FFA,#3752FD] rounded-2xl flex items-center py-5 px-10 gap-5 hover:cursor-pointer transition active:scale-105 hover:opacity-90">
+                <div id="discover-btn" class="col-span-2 bg-linear-[315deg,#9BA8F8,#6C7FFA,#3752FD] rounded-2xl flex items-center py-5 px-10 gap-5 hover:cursor-pointer transition active:scale-105 hover:opacity-90">
                     <img src="./assets/board.png" alt="">
                     <p class="text-white font-medium text-2xl">Discover Something <br>New Today!</p>
                 </div>
@@ -220,7 +218,7 @@
         </section>
 
         <!-- activity log -->
-        <section class="col-span-1 bg-white rounded-2xl ">
+        <section class="col-span-1 bg-white rounded-2xl drop-shadow-lg">
             <div class="text-center space-y-2 py-6">
                 <div class="flex items-center justify-center gap-4">
                     <img src="./assets/activity.png" alt="activity">
@@ -240,7 +238,7 @@
 
 
     <!-- JS files -->
-    <script src="./JS\utility.js"></script>
+    <script src="./JS\indexPage.js"></script>
     <script src="./JS\currentDateGenerator.js"></script>
 </body>
 

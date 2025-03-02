@@ -12,8 +12,6 @@ document.getElementById("theme-changer-btn")
         // count += 1;
     })
 
-
-
 // all the complete buttons
 document.getElementById("mobile-fix-btn")
     .addEventListener("click", function (event) {
@@ -83,4 +81,7 @@ document.getElementById("clear-history-btn").addEventListener("click", function 
 })
 
 
-
+document.getElementById("discover-btn")
+    .addEventListener("click", function(){
+        window.location.href = "blog.html";
+    })

@@ -15,7 +15,10 @@ const min = currentDateObj.getMinutes();
 const sec = currentDateObj.getSeconds();
 
 let notation = "AM";
-if (hour > 12){
+if (hour === 0){
+    hour = 12;
+}
+else if (hour > 12){
     notation = "PM";
     hour = hour - 12;
 }
